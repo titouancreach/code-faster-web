@@ -1,11 +1,11 @@
 import QueryRepoContent from './QueryRepoContent'
 import React from 'react'
 
-import {cx} from 'emotion'
-import {marginAuto} from './styled'
-import {useInputValue} from './useInputValue'
+import { cx } from 'emotion'
+import { marginAuto } from './styled'
+import { useInputValue } from './useInputValue'
 
-function RepositorySettings({className}) {
+function RepositorySettings({ className }) {
   const [owner] = useInputValue('')
   const [repo] = useInputValue('')
   const [file] = useInputValue('')

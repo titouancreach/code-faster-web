@@ -1,6 +1,6 @@
 import CodeFaster from './CodeFaster'
 import gql from 'graphql-tag'
-import {Query} from 'react-apollo'
+import { Query } from 'react-apollo'
 import React from 'react'
 
 const query = gql`
@@ -15,10 +15,10 @@ const query = gql`
   }
 `
 
-function QueryRepoContent({className}) {
+function QueryRepoContent({ className }) {
   return (
     <Query query={query}>
-      {({loading, error, data}) => {
+      {({ loading, error, data }) => {
         if (!error && !loading) {
           return (
             <CodeFaster

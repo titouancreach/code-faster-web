@@ -1,8 +1,8 @@
-import React, {useState, useMemo} from 'react'
-import {useStopWatch} from './useStopWatch'
+import React, { useState, useMemo } from 'react'
+import { useStopWatch } from './useStopWatch'
 
-import {cx} from 'emotion'
-import {useInputValue} from './useInputValue'
+import { cx } from 'emotion'
+import { useInputValue } from './useInputValue'
 
 function firstMatchingChar(a, b) {
   if (a && a[0] && b && b[0] && a[0] === b[0]) {
@@ -28,7 +28,7 @@ function splitText(text, n) {
   return [text.slice(0, n), text.slice(n)]
 }
 
-function CodeFaster({content, className}) {
+function CodeFaster({ content, className }) {
   const [userInputValue, reset] = useInputValue()
   const [correct, setCorrect] = useState(0)
   const [total, setTotal] = useState(0)
